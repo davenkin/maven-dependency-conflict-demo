@@ -24,4 +24,4 @@ run "mvn clean install" again. Now local Maven repository should have both V1.0 
 
 (6)open "http://localhost:8080/resolve-web/hello", you should see "hello world".
 
-(7)open "http://localhost:8080/resolve-web/goodBye", you should see "java.lang.NoSuchMethodError: projectcommon.HelloWorld.sayGoodBye()Ljava/lang/String;"
+(7)open "http://localhost:8080/resolve-web/goodBye", you should see "java.lang.NoSuchMethodError: projectcommon.HelloWorld.sayGoodBye()Ljava/lang/String;", but we expect to see "goodbye world".
