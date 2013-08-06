@@ -12,7 +12,4 @@ public class HelloWorld {
         return "hello world";
     }
 
-    public String sayGoodBye(){
-        return "goodbye world";
-    }
 }

@@ -6,7 +6,13 @@ This project is for demonstrating conflicts due to Maven's dependency resolution
 resolve-web -> project-A -> project-common:1.0
 resolve-web -> project-B -> project-C -> project-common:2.0
 
-(1)go to project-common, change project version to 1.0, and delete sayGoodBye() in HelloWorld.java. run "mvn clean install".Then add the sayGoodBye() method back again, and change project version to 2.0, run "mvn clean install" again. Now local Maven repository should have both V1.0 and V2.0 for project-common.
+(1)go to project-common, run "mvn clean install". Then change project version from 1.0 to 2.0, and add a sayGoodBye() method in HelloWorld.java.
+
+    public String sayGoodBye(){
+        return "goodbye world";
+    }
+
+run "mvn clean install" again. Now local Maven repository should have both V1.0 and V2.0 for project-common.
 
 (2)go to project-A, run "mvn clean install"
 
