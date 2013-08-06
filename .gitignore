@@ -7,4 +7,5 @@ db-hsql/
 # Package Files #
 *.jar
 *.war
+*.*~
 *.ear
